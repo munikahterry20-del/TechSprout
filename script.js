@@ -32,13 +32,13 @@ document.querySelectorAll('.filter').forEach(btn => btn.addEventListener('click'
   document.querySelectorAll('.project').forEach(p => p.classList.toggle('hide', cat !== 'all' && p.dataset.cat !== cat));
 }));
 
-let audience = 'school';
+let audience = 'School/NGO';
 document.querySelectorAll('.aud-btn').forEach(btn => btn.addEventListener('click', () => {
   document.querySelectorAll('.aud-btn').forEach(x => x.classList.remove('active'));
   btn.classList.add('active');
   audience = btn.dataset.audience;
   const select = document.querySelector('select[name="interest"]');
-  select.value = audience === 'parent' ? '1-on-1 Mentorship' : '';
+  select.value = audience === 'Parent/Student' ? '1-on-1 Mentorship' : '';
 }));
 
 const form = document.getElementById('inquiryForm');
