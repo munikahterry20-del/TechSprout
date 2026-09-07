@@ -43,7 +43,9 @@ document.querySelectorAll('.aud-btn').forEach(btn => btn.addEventListener('click
 
 const form = document.getElementById('inquiryForm');
 const status = document.getElementById('formStatus');
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxI-I5Ji61b8sLaQyr81vGDzFhen5MTnn32JjWNPXgc6efu6QPrt60bfA0HsWk6HwAy/exec'; // Replace with your copied Apps Script Web App URL
+
+// === CHANGE LINE 46 BELOW: REPLACE WITH YOUR COPIED GOOGLE WEB APP URL ===
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxI-I5Ji61b8sLaQyr81vGDzFhen5MTnn32JjWNPXgc6efu6QPrt60bfA0HsWk6HwAy/exec'; 
 
 form.addEventListener('submit', e => {
   e.preventDefault();
